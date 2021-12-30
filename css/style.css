@@ -1,0 +1,256 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+.wrapper {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	height: 700px;
+}
+.user_area {
+	position:  -webkit-sticky; /*Safari用*/
+	position: sticky;
+	top: 0;
+	width: 35%;
+	height: 700px;
+	background-color: beige;
+}
+.user {
+	display: flex;
+	height: 7em;
+}
+.user_icon {
+	text-align: center;
+	position: relative;
+	top: 0.5em;
+	left: 1em;
+	height: 6em;
+}
+.user_icon img {
+	width: 6em;
+	height: 6em;
+	border-radius: 5.5em;
+	position: relative;
+	z-index: 0;
+}
+.user_meisai {
+	width: 24em;
+	height: 6em;
+	top: 0.5em;
+	left: 1em;
+	position: relative;
+}
+.user_name {
+	padding-left: 1em;
+	font-weight: bolder;
+}
+.new_rireki {
+	padding-left: 1em;
+	font-size: 0.8em;
+}
+.fukidashi {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	position: relative;
+	max-width: 870px;
+	margin: 0 auto;
+	align-items: flex-start;
+	margin-bottom: 1em;
+}
+.fukidashi2 {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	position: relative;
+	max-width: 870px;
+	margin: 0 auto;
+	align-items: flex-start;
+	margin-bottom: 1em;
+	flex-direction: row-reverse;
+}
+#fukiadd {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	position: relative;
+	max-width: 870px;
+	margin: 0 auto;
+	align-items: flex-start;
+	margin-bottom: 1em;
+	flex-direction: row-reverse;
+}
+.ta-in_area {
+	width: 65%;
+	height: 700px;
+}
+.talk_area {
+	height: 518px;
+	position: relative;
+}
+.video {
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 49.2%;
+	transform: translate(-50%,-50%);
+	height: 518px;
+	width: 936px;
+	/* vertical-align: bottom; */
+}
+.kaiwa {
+	position: absolute;
+	width: 100%;
+	height: 518px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.insert_area {
+	position: fixed;
+	width: 922px;
+	height: 182px;
+	background-color: whitesmoke;
+
+}
+.fukidashi .text {
+	position: relative;
+	/* display: flex; */
+	flex-flow: wrap;
+	justify-content: flex-end;
+	width: calc(100% - 118px);
+}
+.fukidashi2 .text {
+	position: relative;
+	/* display: flex; */
+	flex-flow: wrap;
+	justify-content: flex-start;
+	/* width: calc(100% - 118px); */
+	/* flex-direction: row-reverse; */
+}
+#fukiadd #text2 {
+	position: relative;
+	flex-flow: wrap;
+	justify-content: flex-start;
+}
+.fukidashi .text .mei_txt {
+	background: #eceefe;
+	margin-bottom: 1em;
+	padding: 0.8em 1em;
+	border-radius: 11px;
+	display: inline-block;
+	font-size: 0.8rem;
+}
+.fukidashi2 .text .mei_txt {
+	background: #eceefe;
+	margin-bottom: 1em;
+	padding: 0.8em 1em;
+	border-radius: 11px;
+	display: inline-block;
+	font-size: 0.8rem;
+}
+#fukiadd #text2 .mei_txt {
+	background: #eceefe;
+	margin-bottom: 1em;
+	padding: 0.8em 1em;
+	border-radius: 11px;
+	display: inline-block;
+	font-size: 0.8rem;
+}
+.fukidashi .icon {
+  text-align: center;
+  position: relative;
+  top: 1em;
+}
+.fukidashi .icon img {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  position: relative;
+  z-index: 0;
+}
+.fukidashi .icon .label {
+  font-size: 0.5rem;
+  margin-bottom: 0.25em;
+}
+.time {
+	margin-bottom: 1em;
+	padding: 0.8em 1em;
+	display: inline-block;
+	font-size: 0.5rem;
+}
+#t_area {
+	width: 80%;
+	height: 40px;
+	vertical-align: top;
+	padding: 8px;
+	margin-top: 10px;
+	margin-left: 8px;
+	box-sizing: border-box;
+	border: 3px solid midnightblue;
+	border-radius: 8px;
+	font-size: 16px;
+	resize: none;
+}
+#insert_part {
+	display: flex;
+}
+#inbtn {
+	margin-top: 9px;
+	margin-left: 4px;
+	height: 40px;
+}
+#inbtn:hover {
+	/* リンクをホバーしたときのカーソルにする。 */
+	cursor: pointer;
+}
+#inbtn:active {
+	position: relative;
+	top: 2px;
+}
+#scroll-inner {
+	display: block;
+	z-index: 10;
+}
+#scroll-inner-meisaku {
+	display: none;
+	z-index: 0;
+}
+#scroll-inner-sweet {
+	display: none;
+	z-index: 0;
+}
+#scroll-inner-boruto {
+	display: none;
+	z-index: 0;
+}
+#scroll-inner-musubi {
+	display: none;
+	z-index: 0;
+}
+#scroll-inner-nokio {
+	display: none;
+	z-index: 0;
+}
